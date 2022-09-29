@@ -9,14 +9,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!--link to my about me css -->
+        <link rel="stylesheet" href="fontawesome/css/aboutMecss/aMcss.css">
+
+        <!--link to portfolio-->
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <!--Changed the name to my name-->
+    <title>Scott Heigl-Yates</title>
     <style>
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            /*Changed the font style to Times New Roman */
+            font-family: 'Times New Roman', sans-serif; 
             scroll-behavior: smooth;
+            /*Added a light background-color to the body */
+            background-color: #ADD8E6;
         }
 
         .faded {
@@ -30,9 +38,10 @@
         }
 
         .btn-outline {
-            color: black;
+            color:  black ;
             background-color: white;
-            border: 2px solid black;
+            /*change border color of button to a light pink */
+            border: 2px solid #E6BBAD;
             opacity: 0.5;
             transition: 0.3s;
 
@@ -48,17 +57,19 @@
         }
 
         .contacticon {
-            font-size: 65px;
+            font-size: 70px;
         }
 
         .contacticon a {
-            color: rgb(33, 37, 41);
+            /*change contact color to light pink */
+            color: #8B0000;
         }
 
         .course {
             margin: 0 10px;
             padding: 20px;
-            background-color: #eeeeee;
+            /* background button of color I change to light pink */
+            background-color: #E6BBAD;
             border-radius: 5px;
             display: flex;
             justify-content: center;
@@ -75,14 +86,20 @@
         }
 
         .next a {
-            color: rgb(33, 37, 41);
+            /*change arrow color to dark red */
+            color: #8B0000 /*rgb(33, 37, 41)*/;
         }
+        
+     
+       
+        
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+        <!--added the text danger class to change the display of my name to red-->
+        <a class="navbar-brand text-danger" href="#landing">Scott Heigl-Yates<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -91,7 +108,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a   class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#courses">Courses</a>
@@ -99,37 +116,55 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
+                <!--Adding hobbie to the nav bar-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
-        </div>
+            <!--I added the badge component to this web application-->
+            <h4 >Hello, my name is Scott Heigl-Yates <span class=" badge badge-info">Enjoy Learning About Me </span></h4>
+         </div>
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
                 University.</h5>
         </div>
+        <!--adding a picture of myself. image fluid will make the image responsive, also I added a nice border using the thumbnail class-->
+            <img class="img-fluid img-thumbnail" src="images/aboutMeImg/portfolioPic.jpeg" alt="Picture of Scott" width="400" height="600">
+        <div>
+
+        </div>
         <div class="row my-4">
-            <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
-
-            <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+            <!--change image with project managment-->
+            <div class="col my-3"><img src="images/aboutMeImg/projectManagementIcon.png" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="Project Management" /></div>
+            <!--Change image with full stack icon-->
+            <div class="col my-3"><img src="images/aboutMeImg/fullStackIcon.webp" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="Full Stack" /></div>
+            <!--Change image with technical support icon-->
+            <div class="col my-3 "><img src="images/aboutMeImg/ITSupportIcon.png" class="lang " data-toggle="tooltip"
+                    data-placement="top" title="Technical Support" /></div>
+            <!--Change the icon image to a better C# image, can't stand the white background color-->
+            <div class="col my-3"><img src="images/aboutMeImg/CsharpIcon.png" class="lang" data-toggle="tooltip" data-placement="top"
                     title="C#" /></div>
-            <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Node.js" /></div>
-            <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                    <!--Change this photo to a computer hardware icon.-->
+            <div class="col my-3"><img src="images/aboutMeImg/HardwareIcon.png" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="Computer Hardware" /></div>
+                    <!--Change this photo with a better Java Icon-->
+            <div class="col my-3"><img src="images/aboutMeImg/JavaIcon.png" class="lang" data-toggle="tooltip" data-placement="top"
                     title="Java" /></div>
-
-            <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="MongoDB" /></div>
+                    <!--Change this photo with a better Asp.Net icon-->
+            <div class="col my-3"><img src="images/aboutMeImg/AspNetIcon.png" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="ASP.NET" /></div> 
+                    <!--Change this photo with a better mySQL icon-->          
+                     <div class="col my-3"><img src="images/aboutMeImg/mySQLIcon.png" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="MySQL" /></div> 
+                    <!--Change this picture to the Mirosoft Office 365 icon STOPPP here-->
+                    <div class="col my-3"><img src="images/aboutMeImg/Microsoft365Icon.png" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="Microsoft Office 365" /></div>
 
         </div>
         <div class="row my-4">
@@ -142,6 +177,11 @@
             <div class="col">
                 <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
             </div>
+            <!--Adding hobbie button-->
+            <div class="col">
+                <a href="#hobbies"><button type="button" class="btn btn-outline">Hobbies</button></a>
+            </div>
+            
         </div>
         <div class="row mt-5 next">
             <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
@@ -153,39 +193,45 @@
             <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
+            <h5 class="display-5 mx-auto faded text-center mb-4">The projects I worked on during my academic career.</h5>
         </div>
+        <!--Changing this project to my Capstone 1 project. I also changed the color, font size, and font family of the header -->
         <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
+            <h5  style="color:#8B0000; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Information Technology Capstone one Project - (Catalog System)</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
-                in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
-                sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
-                tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
-                purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
+            <!--I am changing this paragraph to fit the project description-->
+            <p class="text-justify" style="font-size: 17px;">Worked in a 4 person project team to deliver a complete information solution to the 
+                Bio Department in determining the best process for the lab coordinators and lab professors to search for slides. 
+                Completed the analysis phase of the project by interveiwing the client, understanding and documenting their requirements and systems goals.
+                Utilized an Object Oriented Software Development Life Cycle (SDLC) to document how the catalog system would operate in terms of the business process. Some 
+                of the documents included Unified Modeling Langauge (UML) tools such as Activity Diagrams, and User Stories.
+
+                </p>
         </div>
         <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
+            <h5 style="color:#8B0000; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">CIS 3344 -(Developed Web Applications)</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
+            <p class="text-justify">Developed a web application that displayed my interest and my life experiences.
+                Developed a dating web application by using JavaScript to allow the users to like, pass, and remove a
+                dating profile from the application. In a team of two designed in vue.js a shopping cart application by 
+                using for loops, arrays, and the vue.js syntax. The users would be able to calculate their order like a shopping cart.
+            </p>
+            <!--link to my website-->
+            <a id="web-site-link" href="http://cis-iis2.temple.edu/Spring2022/CIS3344_tuk61723/" >link to my website </a>
         </div>
         <div class="row w-100">
-            <h5>Query Dating Site</h5>
+            <h5 style="color:#8B0000; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">CIS 3309 (C# Point Of Sale System)</h5>
         </div>
+        <!--Change this project to my c sharp project -->
         <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
-                egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
-                tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
-                amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
-                Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
+            <p class="text-justify">Used the C# sharp lanaguge. to build a form where the users could add, update, search, calculate, and remove items 
+                from their shopping cart. Coded constructor classes, and database functions for the users to be able to connect to the Database. 
+            </p>
+    
         </div>
+    
         <div class="row mt-5 next">
             <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
                     title="Courses"></i></a> </div>
@@ -195,50 +241,127 @@
             <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
         </div>
         <div class="row mx-auto mb-4">
-            <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
+            <h5 class="display-5 mx-auto faded text-center">The academic courses I have taken at Temple University</h5>
         </div>
         <div class="row w-100 justify-content-center my-3">
             <div class="col text-center course">
-                <h5>Information Systems Analysis and Design</h5>
+                <!--adding a span for my grade I got for the courses I took at Temple University -->
+                <h5>Information Systems Analysis and Design</h5><span style="color:#8B0000">(A+)</span>
             </div>
             <div class="col text-center course">
-                <h5>Server-Side Web Application Development</h5>
-            </div>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Network Architectures</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Client-Side Scripting</h5>
+                <h5>JAVA</h5> <span style="color:#8B0000">(C-)</span>
             </div>
         </div>
         <div class="row w-100 justify-content-center my-3">
             <div class="col text-center course">
-                <h5>Component-Based Software Design</h5>
+                <h5>Network Architectures </h5><span style="color:#8B0000">(B+)</span>
             </div>
             <div class="col text-center course">
-                <h5>Database Management Systems</h5>
+                <h5>Client-Side Scripting </h5><span style="color:#8B0000">(B+)</span>
             </div>
         </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <h5>Component-Based Software Design</h5> <span style="color:#8B0000">(C)</span>
+            </div>
+            <div class="col text-center course">
+                <h5>Database Management Systems </h5> <span style="color:#8B0000">(B-)</span>
+            </div>
+        </div>
+
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <h5>Project Management </h5> <span style="color:#8B0000">(A-)</span>
+            </div>
+            <div class="col text-center course">
+                <h5>Quality Assurance </h5><span style="color:#8B0000;">(B+)</span>
+            </div>
+        </div>
+        <!--Hobbie section-->
+ <div class="row mt-5 next">
+            <a href="#hobbies" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Hobbies"></i></a> </div>
+                    <!--hobbie info-->
+                    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="hobbies">
+                        <div class="row mx-auto">
+                            <h4 class="display-4 font-weight-bold mx-auto text-center">Hobbies</h4>
+                    </div>
+                    <!--faded message-->
+                    <div class="row mx-auto mb-4">
+                        <h5 class="display-5 mx-auto faded text-center">What can I say I like to keep busy</h5>
+                    </div >
+                <div class="row">
+                    <div class="column">
+                    <!--Picture of me running the Philadelphia 2022 Half marathon.-->
+                    <img src="images/aboutMeImg/PDRhalf.jpg" alt="PDR Half Marathon Race" id="PDR-Half" style="width:100%;">
+                </div>
+                    <div class="column">
+                    <!--picture of my piano-->
+                    <img src="images/aboutMeImg/Piano.jpg" alt="My piano" id="my-piano" style="width:100%;" >
+                </div>
+                    <div class="column">
+                    <!--Picture display my Duolingo achievement  -->
+                    <img src="images/aboutMeImg/DuoFrench.PNG" alt="Learning French" id="duo-french" style="width:100%;">
+                </div>
+                </div>
+                <!--Paragraphs describing my hobbies-->
+                <div>
+                    <!--My running story-->
+                    <h5 style="color:#8B0000; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">My Running Story</h5>
+                    <p id="running-paragraph"> I love the sport of running. My running story started when I was in high school
+                        where I was a sprinter; competed in the 100m, 400m, and the 4x4 relay. In college I transition into long distance running where I would join the 
+                        Temple University Running Club. Currently I am the co president of the club and the club mission is to offer a safe judge free environment for 
+                        members to enjoy the activity of running. I am training to qualify for the Boston Marathon which requires me to run under 3 hours for a qualifying Marathon race.
+                        I will be running the 2022 Philadelphia Marathon and I will qualify for Boston this time!
+                    </p>
+                    <!--My piano story-->
+                    <h5 style="color:#8B0000; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">My Piano Story</h5>
+                    <p> Music has helped me through some tough times in my life. During my teenage years I listen to rock/metal music;
+                        some people would describe the music I listen to as angry music. Now I listen to all genres of music like Japanese jazz fusion, Classical,
+                        Nu metal, and up lifting music etc. I am passionate about music and I made it my goal to learn as many instruments as I can before 
+                        my life ends. I am currently learning piano, the hardest parts about playing piano is reading the sheet music and working 
+                        on my hand coordination to hit the right note at the right time. Instruments I will learn next are the electric guitar, saxaphone, violin, and xyolophone etc.
+                        The Youtube channel George Collier Highlights Talent musicians. Insipration is all around us <a href="https://youtu.be/lpc1lEJ-SRc">canon in D but it keeps getting jazzier</a>
+                        
+                    </p>
+         
+                    <!--My french story-->
+                    <h5 style="color:#8B0000; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">My French Story</h5>
+                    <p> When people first meet me they think I speak Spanish because of my mixed race background; I am Dominican. I am adopted with two step dads
+                       (Marc) and (Eldin) and two dads (Robert) and (Russell). In High School I was not required to take a language to graduate. I took French at Delaware Community College because 
+                        my dad Robert and my step dad Marc speak French. Now I use the application Duolingo to help me with my French; Duolingo is a language teaching 
+                        application. One of my goals in Duolingo is to get every legendary crown in the French course. Languages I would also like to learn is
+                        Japanese, Spanish, and Russian etc. Language is the key to the heart. P.S French Rap is amazing.
+                    </p>
+
+                </div>
+                </div>
+
         <div class="row mt-5 next">
             <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
                     title="Contact"></i></a> </div>
     </div>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
+            <!--Reworded this heading in my own words-->
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Social Media Contact</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
+            <!--Reworded this heading in my own words-->
+            <h5 class="display-5 mx-auto faded text-center">I Love To Connect With People.</h5>
         </div>
         <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
+            <!--Changing this email to my email-->
+            <a href="mailto:scott.heiglyates@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
                     data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
+            <a href="https://www.linkedin.com/in/scott-heigl-yates-3168a8150" class="col mx-3"><i class="fab fa-linkedin"
                     data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
+            <a href="https://github.com/Codingwizard76" class="col mx-3"><i class="fab fa-github-square"
                     data-toggle="tooltip" data-placement="top" title="Github"></i></a>
+                    <!--adding instagram icon here-->
+                    <a href="https://www.instagram.com/scottheiglyates525/" class="col mx-3"><i class="fab fa-instagram-square"
+                        data-toggle="tooltip" data-placement="top" title="Instagram"></i></a>
+
 
         </div>
         <div class="row mt-5">
@@ -264,3 +387,4 @@
 </body>
 
 </html>
+<!--done with  my changes-->
